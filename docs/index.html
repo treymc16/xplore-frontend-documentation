@@ -1,0 +1,113 @@
+<!DOCTYPE html><html class="default no-js"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>undefined</title><meta name="description" content="Documentation for undefined"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script async src="assets/search.js" id="search-script"></script></head><body><script>document.body.classList.add(localStorage.getItem("tsd-theme") || "os")</script><header><div class="tsd-page-toolbar"><div class="container"><div class="table-wrap"><div class="table-cell" id="tsd-search" data-base="."><div class="field"><label for="tsd-search-field" class="tsd-widget search no-caption">Search</label><input type="text" id="tsd-search-field"/></div><ul class="results"><li class="state loading">Preparing search index...</li><li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">undefined</a></div><div class="table-cell" id="tsd-widgets"><div id="tsd-filter"><a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a><div class="tsd-filter-group"><div class="tsd-select" id="tsd-filter-visibility"><span class="tsd-select-label">All</span><ul class="tsd-select-list"><li data-value="public">Public</li><li data-value="protected">Public/Protected</li><li data-value="private" class="selected">All</li></ul></div> <input type="checkbox" id="tsd-filter-inherited" checked/><label class="tsd-widget" for="tsd-filter-inherited">Inherited</label><input type="checkbox" id="tsd-filter-externals" checked/><label class="tsd-widget" for="tsd-filter-externals">Externals</label></div></div><a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a></div></div></div></div><div class="tsd-page-title"><div class="container"><h1> undefined</h1></div></div></header><div class="container container-main"><div class="row"><div class="col-8 col-content"><div class="tsd-panel tsd-typography">
+<a href="#xplore" id="xplore" style="color: inherit; text-decoration: none;">
+  <h1>Xplore</h1>
+</a>
+
+<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
+  <h2>Installation</h2>
+</a>
+
+<a href="#prerequisites" id="prerequisites" style="color: inherit; text-decoration: none;">
+  <h2>Prerequisites</h2>
+</a>
+<ol>
+<li><p>Download Android Studio</p>
+<ul>
+<li>Have a device in AVG manager set up</li>
+<li>I am currently using a Pixel 2</li>
+</ul>
+</li>
+<li><p>Have Node.js Installed</p>
+</li>
+<li><p>Install Git (Group Use)</p>
+</li>
+</ol>
+<p><strong>Can skip steps 1-3 and 5-6 if you clone the repository</strong> </p>
+<ol>
+<li>Create project<pre><code><span class="hl-0">ionic</span><span class="hl-1"> </span><span class="hl-0">start</span><span class="hl-1"> </span><span class="hl-2">&quot;project name&quot;</span><span class="hl-1"> </span><span class="hl-0">tabs</span><span class="hl-1"> --</span><span class="hl-0">type</span><span class="hl-1">=</span><span class="hl-0">react</span>
+</code></pre>
+</li>
+</ol>
+<ul>
+<li>&quot;project name&quot; being the project title</li>
+<li>Uses tabs interface</li>
+</ul>
+<ol start="2">
+<li><p>Enter folder of newly created project</p>
+<pre><code><span class="hl-0">cd</span><span class="hl-1"> </span><span class="hl-0">xplore</span>
+</code></pre>
+</li>
+<li><p>Run serve</p>
+<pre><code><span class="hl-0">ionic</span><span class="hl-1"> </span><span class="hl-0">serve</span>
+</code></pre>
+</li>
+<li><p>Build project</p>
+<pre><code><span class="hl-0">npm</span><span class="hl-1"> </span><span class="hl-0">run</span><span class="hl-1"> </span><span class="hl-0">build</span>
+</code></pre>
+</li>
+<li><p>Generate a new capacitor project to allow emu to work</p>
+<pre><code><span class="hl-0">npx</span><span class="hl-1"> </span><span class="hl-0">cap</span><span class="hl-1"> </span><span class="hl-0">init</span>
+</code></pre>
+</li>
+<li><p>Add devices appropriately </p>
+<pre><code><span class="hl-0">npx</span><span class="hl-1"> </span><span class="hl-0">cap</span><span class="hl-1"> </span><span class="hl-0">add</span><span class="hl-1"> </span><span class="hl-0">ios</span>
+</code></pre>
+<p>or</p>
+<pre><code><span class="hl-0">npx</span><span class="hl-1"> </span><span class="hl-0">cap</span><span class="hl-1"> </span><span class="hl-0">add</span><span class="hl-1"> </span><span class="hl-0">android</span>
+</code></pre>
+</li>
+</ol>
+<p>NOTE: ios emulator devices will only work on ios devices with xcode</p>
+<ol start="7">
+<li><p>Sync capacitors to devices</p>
+<pre><code><span class="hl-0">npx</span><span class="hl-1"> </span><span class="hl-0">cap</span><span class="hl-1"> </span><span class="hl-0">sync</span><span class="hl-1"> </span><span class="hl-0">ios</span>
+</code></pre>
+<p>or</p>
+<pre><code><span class="hl-0">npx</span><span class="hl-1"> </span><span class="hl-0">cap</span><span class="hl-1"> </span><span class="hl-0">sync</span><span class="hl-1"> </span><span class="hl-0">android</span>
+</code></pre>
+</li>
+<li><p>Open project on xcode or Android Studio</p>
+<pre><code><span class="hl-0">npx</span><span class="hl-1"> </span><span class="hl-0">open</span><span class="hl-1"> </span><span class="hl-0">ios</span>
+</code></pre>
+<p>or </p>
+<pre><code><span class="hl-0">npx</span><span class="hl-1"> </span><span class="hl-0">open</span><span class="hl-1"> </span><span class="hl-0">Android</span>
+</code></pre>
+</li>
+</ol>
+<ul>
+<li>If you get an error, run this command instead:<pre><code><span class="hl-0">npx</span><span class="hl-1"> </span><span class="hl-0">open</span><span class="hl-1"> &lt;</span><span class="hl-0">device</span><span class="hl-1"> </span><span class="hl-0">name</span><span class="hl-1">&gt;</span>
+</code></pre>
+</li>
+</ul>
+<ol start="9">
+<li>Run emulator with live server to reduce redundancy<pre><code><span class="hl-0">ionic</span><span class="hl-1"> </span><span class="hl-0">capacitor</span><span class="hl-1"> </span><span class="hl-0">run</span><span class="hl-1"> </span><span class="hl-0">ios</span><span class="hl-1"> --</span><span class="hl-0">livereload</span>
+</code></pre>
+or<pre><code><span class="hl-0">ionic</span><span class="hl-1"> </span><span class="hl-0">capacitor</span><span class="hl-1"> </span><span class="hl-0">run</span><span class="hl-1"> </span><span class="hl-0">android</span><span class="hl-1"> --</span><span class="hl-0">livereload</span>
+</code></pre>
+</li>
+</ol>
+<ul>
+<li>Here you will choose your device and will direct you to a localhost server.</li>
+<li>If an error occurs while trying to connect to hose, run this command instead:<pre><code><span class="hl-0">ionic</span><span class="hl-1"> </span><span class="hl-0">cap</span><span class="hl-1"> </span><span class="hl-0">run</span><span class="hl-1"> </span><span class="hl-0">ios</span><span class="hl-1"> -</span><span class="hl-0">l</span><span class="hl-1"> --</span><span class="hl-0">external</span>
+</code></pre>
+or <pre><code><span class="hl-0">ionic</span><span class="hl-1"> </span><span class="hl-0">cap</span><span class="hl-1"> </span><span class="hl-0">run</span><span class="hl-1"> </span><span class="hl-0">android</span><span class="hl-1"> -</span><span class="hl-0">l</span><span class="hl-1"> --</span><span class="hl-0">external</span>
+</code></pre>
+NOTE: Instead of rebuilding projects and copying files over to xcode or android studio, we can have a live server to our emulators.</li>
+</ul>
+
+<a href="#release-notes" id="release-notes" style="color: inherit; text-decoration: none;">
+  <h2>Release Notes</h2>
+</a>
+<p><strong>Description</strong></p>
+<ul>
+<li>Xplore (working title) aims to become a social media platform centered around community engagement and social interaction. At its core lies the real-world, interactive treasure hunting application that you will develop over the course of this semester. The resulting treasure hunting experience will provide users with a new means for interacting with local businesses and community members.</li>
+</ul>
+<p><strong>Working Submission</strong></p>
+<ul>
+<li>Currently our project is finished with milestone 1 displaying &quot;Hello World&quot; on the main screen. We have already moved into our milestone 2 by adding the map features to our appliction with the start of our player location.</li>
+</ul>
+<p><strong>Milestone 2</strong></p>
+<ul>
+<li>For this milestone we decied to change how we were going to be building the application. Instead of using Ionic and Leaflet for the map we are changing to react native with google maps. We have a working geolocation tracking system with the google maps. As well we have stock holder location for treasures. We also created another repository that will handle out backend that uses Phyton Django. Started to work on the database and will have that conntected to the front end by milestone 3</li>
+</ul>
+</div></div><div class="col-4 col-menu menu-sticky-wrap menu-highlight"><nav class="tsd-navigation primary"><ul><li class="current"><a href="modules.html">Modules</a></li><li class=" tsd-kind-module"><a href="modules/components_DrawerNavigator.html">components/<wbr/>Drawer<wbr/>Navigator</a></li><li class=" tsd-kind-module"><a href="modules/components_EditScreenInfo.html">components/<wbr/>Edit<wbr/>Screen<wbr/>Info</a></li><li class=" tsd-kind-module"><a href="modules/components_NavigatorWrapper.html">components/<wbr/>Navigator<wbr/>Wrapper</a></li><li class=" tsd-kind-module"><a href="modules/components_StackNavigator.html">components/<wbr/>Stack<wbr/>Navigator</a></li><li class=" tsd-kind-module"><a href="modules/components_StyledText.html">components/<wbr/>Styled<wbr/>Text</a></li><li class=" tsd-kind-module"><a href="modules/components_Themed.html">components/<wbr/>Themed</a></li><li class=" tsd-kind-module"><a href="modules/components_ToggleIcon.html">components/<wbr/>Toggle<wbr/>Icon</a></li><li class=" tsd-kind-module"><a href="modules/context_AxiosContext.html">context/<wbr/>Axios<wbr/>Context</a></li><li class=" tsd-kind-module"><a href="modules/context_ContextGroup.html">context/<wbr/>Context<wbr/>Group</a></li><li class=" tsd-kind-module"><a href="modules/context_HuntContext.html">context/<wbr/>Hunt<wbr/>Context</a></li><li class=" tsd-kind-module"><a href="modules/context_LocationContext.html">context/<wbr/>Location<wbr/>Context</a></li><li class=" tsd-kind-module"><a href="modules/context_UserContext.html">context/<wbr/>User<wbr/>Context</a></li><li class=" tsd-kind-module"><a href="modules/interfaces_Hunt.html">interfaces/<wbr/>Hunt</a></li><li class=" tsd-kind-module"><a href="modules/interfaces_User.html">interfaces/<wbr/>User</a></li><li class=" tsd-kind-module"><a href="modules/screens_ListScreen.html">screens/<wbr/>List<wbr/>Screen</a></li><li class=" tsd-kind-module"><a href="modules/screens_LoginScreen.html">screens/<wbr/>Login<wbr/>Screen</a></li><li class=" tsd-kind-module"><a href="modules/screens_MapScreen.html">screens/<wbr/>Map<wbr/>Screen</a></li><li class=" tsd-kind-module"><a href="modules/screens_RegisterScreen.html">screens/<wbr/>Register<wbr/>Screen</a></li><li class=" tsd-kind-module"><a href="modules/utils_RootNavigation.html">utils/<wbr/>Root<wbr/>Navigation</a></li></ul></nav></div></div></div><footer class="with-border-bottom"><div class="container"><h2>Legend</h2><div class="tsd-legend-group"><ul class="tsd-legend"><li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li><li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li><li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li></ul><ul class="tsd-legend"><li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li></ul></div><h2>Settings</h2><p>Theme <select id="theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></p></div></footer><div class="container tsd-generator"><p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div><div class="overlay"></div><script src="assets/main.js"></script></body></html>
